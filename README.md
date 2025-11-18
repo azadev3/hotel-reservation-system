@@ -29,3 +29,12 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 - **Translation (i18n):** Implemented using react-i18next to support multiple languages and improve scalability.
 - **Responsive Design:** SCSS + media queries are used to make the app mobile-friendly and ensure good UX across devices.
 - **Pricing Logic:** Meal rules and total price calculation are centralized in helper functions for consistency and easy maintenance.
+
+## Known Limitations & Future Improvements
+
+- **Backend Integration:** Currently uses mock data. Future improvement: connect to real API for dynamic hotel and meal data.
+- **User Authentication:** No login or user session management implemented. Could add authentication for personalized bookings.
+- **Validation & Error Handling:** Basic validation implemented. Could add more robust form validation and better user feedback.
+- **Performance Optimization:** Currently suitable for small datasets. For large datasets, pagination and lazy loading can be optimized.
+- **Export/Print Functionality:** Not yet implemented. Future improvement: allow users to export booking summary as PDF.
+- **Unit Testing:** No automated tests yet. Could add Jest/React Testing Library tests for components and business logic.
