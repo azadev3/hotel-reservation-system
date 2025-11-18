@@ -9,7 +9,7 @@ export interface BoardTypeInterface {
 export interface Config {
   citizenship: string;
   startDate: string;
-  days: number;
+  days: string;
   country: string;
   boardType: BoardCode | '';
 }

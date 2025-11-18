@@ -31,7 +31,7 @@ const DaysTable: React.FC<Props> = ({ config, daysData, setDaysData }) => {
     ? (meals as any)[config.country] ?? { lunch: [], dinner: [] }
     : { lunch: [], dinner: [] };
 
-  if (!config.startDate || config.days <= 0) {
+  if (!config.startDate || Number(config.days) <= 0) {
     return <p className="daysTableEmpty">{t('empty_msg')}</p>;
   }
 

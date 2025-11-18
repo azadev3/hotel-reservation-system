@@ -11,17 +11,19 @@ export const useDaysData = (config: Config) => {
     }
 
     const start = new Date(config.startDate);
-    const arr: DaySelection[] = Array.from({ length: config.days }).map((_, idx) => {
-      const d = new Date(start);
-      d.setDate(start.getDate() + idx);
-      return {
-        dayIndex: idx,
-        date: d.toISOString().slice(0, 10),
-        hotelId: null,
-        lunchId: null,
-        dinnerId: null,
-      };
-    });
+    const arr: DaySelection[] = Array.from({ length: Number(config.days) }).map(
+      (_, idx) => {
+        const d = new Date(start);
+        d.setDate(start.getDate() + idx);
+        return {
+          dayIndex: idx,
+          date: d.toISOString().slice(0, 10),
+          hotelId: null,
+          lunchId: null,
+          dinnerId: null,
+        };
+      },
+    );
 
     setDaysData(arr);
   }, [config.startDate, config.days]);

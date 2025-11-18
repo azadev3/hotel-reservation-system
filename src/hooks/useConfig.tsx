@@ -5,7 +5,7 @@ export const useConfig = () => {
   const [config, setConfig] = React.useState<Config>({
     citizenship: '',
     startDate: '',
-    days: 0,
+    days: '',
     country: '',
     boardType: '',
   });

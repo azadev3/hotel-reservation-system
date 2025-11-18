@@ -66,7 +66,7 @@ const FormSection: React.FC<PropsFormSection> = ({ config, setConfig }) => {
         max={60}
         value={config.days}
         onChange={(e: ChangeEvent<HTMLInputElement>) =>
-          handleChange('days', Number(e.target.value))
+          handleChange('days', e.target.value)
         }
       />
       <CustomBoardType
