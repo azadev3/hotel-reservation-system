@@ -38,3 +38,7 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 - **Performance Optimization:** Currently suitable for small datasets. For large datasets, pagination and lazy loading can be optimized.
 - **Export/Print Functionality:** Not yet implemented. Future improvement: allow users to export booking summary as PDF.
 - **Unit Testing:** No automated tests yet. Could add Jest/React Testing Library tests for components and business logic.
+
+## Live Demo
+
+[View live demo](https://hotelled.netlify.app)
