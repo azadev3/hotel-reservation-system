@@ -2,6 +2,7 @@
   "welcome": "Welcome",
   "dev_by": "Developed by: Azad Mirheydarzada",
   "great_title": "Great! You're logged in.",
+  "design_msg": "Everything you see in the design has been prepared by me without any figma or template.",
   "great_text": "Now you can see pricing for your hotel reservation by filling in the form fields below.",
   "empty_msg": "To see the results, please set the start date, your hotel, the date and the number of days you will stay.",
   "form_section": {

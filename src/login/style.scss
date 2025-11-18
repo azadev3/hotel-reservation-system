@@ -79,7 +79,7 @@
       .top {
         @include flex();
         flex-direction: column;
-        gap: 4px;
+        gap: 8px;
         width: 100%;
         h1 {
           color: $white;

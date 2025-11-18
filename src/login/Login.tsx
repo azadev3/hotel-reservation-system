@@ -24,6 +24,7 @@ const Login: React.FC = () => {
           <div className="top">
             <h1>{t('login.title')}</h1>
             <h3>{t('login.subtitle')}</h3>
+            <p>{t("design_msg")}</p>
           </div>
           <p>
             <Trans i18nKey="login.project_by">
