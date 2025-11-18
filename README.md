@@ -9,10 +9,11 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 
 
     ```bash
-    git clone https://github.com/azadev3/hotel-reservation-system.git
-    cd hotel-reservation-system
-    npm install
-    npm run dev
+    ### git clone https://github.com/azadev3/hotel-reservation-system.git
+
+    ### cd hotel-reservation-system
+    ### npm install
+    ### npm run dev
     ```
 
 ## Technology & Architecture
