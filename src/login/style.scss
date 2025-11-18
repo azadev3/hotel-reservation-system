@@ -1,0 +1,182 @@
+@use '../styles/mix.scss' as *;
+
+@keyframes Shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-container {
+  background-color: $backgroundColor;
+  width: 100%;
+  min-height: 100vh;
+  @include flex();
+  flex-direction: column;
+  position: relative;
+
+  .language-select-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
+    position: absolute;
+    z-index: 1000;
+    right: 21px;
+    top: 21px;
+    background: $hoverBlack;
+    padding: 4px 12px 4px 12px;
+    border-radius: 4px;
+    .language-dropdown {
+      padding: 8px 12px;
+      border-radius: 4px;
+      background-color: transparent;
+      color: $white;
+      font-size: 18px;
+      font-weight: 500;
+      border: 2px solid transparent;
+      outline: none;
+      cursor: pointer;
+      transition: 200ms ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      option {
+        background-color: $black;
+        color: $white;
+      }
+      &:focus {
+        cursor: auto;
+        border: 2px solid $purple;
+      }
+    }
+    .language-flag {
+      min-width: 20px;
+      width: 20px;
+      min-height: 20px;
+      height: 20px;
+      border-radius: 2px;
+    }
+  }
+  .mock-form {
+    max-width: 600px;
+    background-color: $black;
+    width: 100%;
+    padding: 30px 0;
+    box-shadow: 0 0 5px 0 rgba(81, 0, 255, 0.211);
+    border-radius: 12px;
+    @include flexcol();
+    .title-form {
+      width: 100%;
+      padding: 24px;
+      @include flex();
+      flex-direction: column;
+      gap: 16px;
+      .top {
+        @include flex();
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        h1 {
+          color: $white;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 1.5;
+          text-align: center;
+          width: 100%;
+        }
+        h3 {
+          color: $white;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      p {
+        border-left: 10px solid $purple;
+        color: $white;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 18px;
+        width: 100%;
+        line-height: 1.8;
+        span {
+          background-color: $purple;
+          padding: 0 6px;
+          border-radius: 4px;
+        }
+      }
+    }
+    .input-field {
+      width: 100%;
+      background-color: transparent;
+      @include flex();
+      flex-direction: column;
+      gap: 40px;
+      padding: 12px 80px 48px 80px;
+      .field {
+        width: 100%;
+        @include flexcol();
+        gap: 12px;
+        label {
+          color: $white;
+          font-size: 16px;
+          line-height: normal;
+          text-align: left;
+        }
+        input {
+          width: 100%;
+          outline: none;
+          background-color: $black;
+          border: 1px solid $white;
+          padding: 0 12px;
+          text-align: center;
+          height: 50px;
+          border-radius: 100px;
+          color: $white;
+          font-size: 16px;
+          font-weight: 500;
+          transition: 300ms ease;
+          &::placeholder {
+            color: #606060;
+            font-size: 14px;
+            position: relative;
+            bottom: 1px;
+            line-height: normal;
+            transition: 300ms ease;
+            opacity: 1;
+          }
+          &:focus {
+            border: 1px solid mediumslateblue;
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+          &.active {
+            border: 1px solid $red;
+            animation: Shake 0.3s ease forwards normal;
+          }
+        }
+        .error-msg {
+          color: $red;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: left;
+          width: 100%;
+          padding: 2px;
+          opacity: 0;
+          pointer-events: none;
+          transition: 200ms ease;
+          &.active {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+    }
+  }
+}

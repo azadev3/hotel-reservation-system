@@ -1,0 +1,103 @@
+{
+  "welcome": "Xoş gəlmisiniz",
+  "dev_by": "Hazırlayan: Azad Mirheydərzadə",
+  "great_title": "Əla! Siz daxil oldunuz.",
+  "great_text": "İndi form sahələrini dolduraraq otel rezervasiyanız üçün qiymətləri görə bilərsiniz.",
+  "empty_msg": "Nəticələri görmək üçün zəhmət olmasa başlama tarixini, otelinizi, tarixi və qalacağınız gün sayını təyin edin.",
+  "form_section": {
+    "citizenship": "Vətəndaşlıq",
+    "country": "Təyinat ölkəsi",
+    "start_date": "Başlama tarixi",
+    "number_of_days": "Günlərin sayı",
+    "board_types": "Qida növünü seçin",
+    "num_day_pl": "Otel-də qalacağınız günlərin sayı",
+    "please_select": "Zəhmət olmasa seçin"
+  },
+  "board_types": {
+    "full_board": "Tam qida",
+    "half_board": "Yarım qida",
+    "no_board": "Qida yoxdur"
+  },
+  "days_table": {
+    "total_days": "Ümumi günlər",
+    "day": "Gün",
+    "date": "Tarix",
+    "hotel": "Otel",
+    "lunch": "Naharı",
+    "dinner": "Axşam yeməyi",
+    "prev": "Əvvəlki",
+    "next": "Sonrakı"
+  },
+  "summary": {
+    "summary": "Xülasə",
+    "total_price": "Ümumi Qiymət"
+  },
+  "configuration": {
+    "title": "Konfiqurasiya",
+    "citizenship": "Vətəndaşlıq",
+    "start_date": "Başlama tarixi",
+    "days": "Günlər",
+    "destination": "Təyinat",
+    "board_type": "Qida növü",
+    "none": "-"
+  },
+  "daily_details": {
+    "title": "Gündəlik Bölmə",
+    "hotel": "Otel",
+    "lunch": "Nahar",
+    "dinner": "Axşam yeməyi",
+    "day_total": "Günlük Cəmi",
+    "none": "-"
+  },
+  "login": {
+    "title": "Saxta Otel Rezervasiya Sistemi",
+    "subtitle": "Zəhmət olmasa məlumatları daxil edin və davam edin",
+    "project_by": "Bu layihə <0>Azad Mirheydərzadə</0> tərəfindən <1>GlobalSoft</1> şirkəti üçün hazırlanmışdır.",
+    "name_label": "Adınızı daxil edin:",
+    "name_placeholder": "Zəhmət olmasa, ləqəbinizi, adınızı və ya hər hansı bir məlumatı daxil edin...",
+    "error_msg": "Xahiş olunur sahəni doldurun!",
+    "button": {
+      "continue": "Davam et",
+      "loading": "Zəhmət olmasa gözləyin..."
+    }
+  },
+  "countries": {
+    "turkey": "Türkiyə",
+    "uae": "BƏƏ",
+    "italy": "İtaliya"
+  },
+  "meals": {
+    "turkey": {
+      "dinner": {
+        "turkish_kebab": "Türk Kebabı",
+        "istanbul_fish_plate": "İstanbul Balıq Plitəsi",
+        "traditional_meat_stew": "Ənənəvi Ət Qabı"
+      },
+      "lunch": {
+        "chicken_pilaf": "Toyuq Plovu",
+        "lentil_soup_set": "Noxud Şorbası",
+        "veggie_plate": "Tərəvəz Qabı"
+      }
+    },
+    "uae": {
+      "dinner": {
+        "arabic_mixed_grill": "Ərəb Qarışıq Qril",
+        "dubai_seafood_dinner": "Dubay Dəniz Məhsulları Axşam Yeməyi"
+      },
+      "lunch": {
+        "shawarma_plate": "Şavurma Plitəsi",
+        "hummus_falafel_set": "Humus & Falafel"
+      }
+    },
+    "italy": {
+      "dinner": {
+        "pasta_carbonara": "Pasta Karbonara",
+        "italian_seafood_dinner": "İtalyan Dəniz Məhsulları Axşam Yeməyi"
+      },
+      "lunch": {
+        "pizza_margherita": "Pizza Margherita",
+        "lasagna_set": "Lazanya Qabı"
+      }
+    }
+  }
+}

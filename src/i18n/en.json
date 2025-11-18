@@ -1,0 +1,116 @@
+{
+  "welcome": "Welcome",
+  "dev_by": "Developed by: Azad Mirheydarzada",
+  "great_title": "Great! You're logged in.",
+  "great_text": "Now you can see pricing for your hotel reservation by filling in the form fields below.",
+  "empty_msg": "To see the results, please set the start date, your hotel, the date and the number of days you will stay.",
+  "form_section": {
+    "citizenship": "Citizenship",
+    "country": "Destination Country",
+    "start_date": "Start Date",
+    "number_of_days": "Number of Days",
+    "board_types": "Select a Board Type",
+    "num_day_pl": "Number of days you will stay at the hotel",
+    "please_select": "Please select a"
+  },
+  "board_types": {
+    "full_board": "Full Board",
+    "half_board": "Half Board",
+    "no_board": "No Board"
+  },
+  "days_table": {
+    "total_days": "Total Days",
+    "day": "Day",
+    "date": "Date",
+    "hotel": "Hotel",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "summary": {
+    "summary": "Summary",
+    "total_price": "Total Price"
+  },
+  "configuration": {
+    "title": "Configuration",
+    "citizenship": "Citizenship",
+    "start_date": "Start Date",
+    "days": "Days",
+    "destination": "Destination",
+    "board_type": "Board Type",
+    "none": "-"
+  },
+  "daily_details": {
+    "title": "Daily Breakdown",
+    "hotel": "Hotel",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "day_total": "Day Total",
+    "none": "-"
+  },
+  "login": {
+    "title": "Fake Hotel Reservation System",
+    "subtitle": "Please enter input and continue",
+    "project_by": "This project was made by <0>Azad Mirheydarzada</0> for the <1>GlobalSoft</1> company in order to recruit me.",
+    "name_label": "Enter your name:",
+    "name_placeholder": "Please, enter your nickname or name or anything...",
+    "error_msg": "Please enter a field!",
+    "button": {
+      "continue": "Continue",
+      "loading": "Please wait..."
+    }
+  },
+  "countries": {
+    "turkey": "Turkey",
+    "uae": "UAE",
+    "italy": "Italy"
+  },
+  "meals": {
+    "turkey": {
+      "dinner": {
+        "turkish_kebab": "Turkish Kebab",
+        "istanbul_fish_plate": "Istanbul Fish Plate",
+        "traditional_meat_stew": "Traditional Meat Stew"
+      },
+      "lunch": {
+        "chicken_pilaf": "Chicken Pilaf",
+        "lentil_soup_set": "Lentil Soup Set",
+        "veggie_plate": "Veggie Plate"
+      }
+    },
+    "uae": {
+      "dinner": {
+        "arabic_mixed_grill": "Arabic Mixed Grill",
+        "dubai_seafood_dinner": "Dubai Seafood Dinner"
+      },
+      "lunch": {
+        "shawarma_plate": "Shawarma Plate",
+        "hummus_falafel_set": "Hummus & Falafel Set"
+      }
+    },
+    "italy": {
+      "dinner": {
+        "pasta_carbonara": "Pasta Carbonara",
+        "italian_seafood_dinner": "Italian Seafood Dinner"
+      },
+      "lunch": {
+        "pizza_margherita": "Pizza Margherita",
+        "lasagna_set": "Lasagna Set"
+      }
+    }
+  },
+  "hotels": {
+    "turkey": {
+      "hilton_istanbul": "Hilton Istanbul",
+      "titanic_antalya": "Titanic Antalya"
+    },
+    "uae": {
+      "dubai_marina_hotel": "Dubai Marina Hotel",
+      "palm_jumeirah_resort": "Palm Jumeirah Resort"
+    },
+    "italy": {
+      "rome_center_hotel": "Rome Center Hotel"
+    }
+  }
+}

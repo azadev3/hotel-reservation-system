@@ -1,0 +1,53 @@
+@use '../../styles/mix.scss' as *;
+
+.footer-wrapper {
+  padding: 48px;
+  width: 100%;
+  background-color: $black;
+  position: relative;
+  bottom: 180px;
+  .footer {
+    @include flex();
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 40px;
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 21px;
+      h3 {
+        color: $white;
+        width: 100%;
+        text-align: center;
+        @include flex();
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      .socials-grid {
+        width: 100%;
+        gap: 18px;
+        @include flex();
+        flex-wrap: wrap;
+        .link-social {
+          @include flex();
+          text-decoration: none;
+          .icon {
+            font-size: 40px;
+            color: $white;
+            cursor: pointer;
+            transition: 200ms ease;
+            &:hover {
+              color: mediumorchid;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

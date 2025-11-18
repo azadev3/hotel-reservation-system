@@ -1,0 +1,219 @@
+$black: #202020;
+$hoverBlack: #404040;
+$white: #fff;
+$hoverWhite: #cecece90;
+$backgroundColor: #161515;
+$purple: rgb(99, 63, 171);
+$red: rgb(190, 32, 32);
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin overflowText {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+@mixin flexcol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@mixin click {
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@mixin Components {
+  .button-ui, .loading-button-ui {
+    width: 100%;
+    border-radius: 100px;
+    outline: none;
+    border: 2px solid #cecece30;
+    background-color: $hoverBlack;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: 200ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    p {
+      position: relative;
+      z-index: 1;
+      color: $white;
+      font-size: 16px;
+    }
+    &::after {
+      transform: scale(0.6);
+      content: '';
+      width: 0;
+      transition: 300ms ease;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+      border-radius: 100px;
+      background-color: $purple;
+    }
+    &:hover {
+      &::after {
+        transform: scale(1.2);
+        width: 100%;
+      }
+    }
+    @include click();
+  }
+  .loading-button-ui {
+    cursor: no-drop;
+    &:hover {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .input-field-ui,
+  .select-field-ui {
+    width: 100%;
+    @include flexcol();
+    gap: 8px;
+    label {
+      text-transform: capitalize;
+      color: $white;
+      font-size: 15px;
+      line-height: normal;
+    }
+
+    input,
+    select {
+      cursor: pointer;
+      width: 100%;
+      outline: none;
+      background-color: $black;
+      border: 1px solid $white;
+      padding: 12px 24px;
+      border-radius: 100px;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 300ms ease;
+      &::placeholder {
+        color: #606060;
+        font-size: 14px;
+        position: relative;
+        bottom: 1px;
+        line-height: normal;
+        transition: 300ms ease;
+        opacity: 1;
+      }
+      &:focus {
+        cursor: default;
+        border: 1px solid $purple;
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+    }
+    select {
+      appearance: none;
+      background-image: url('/down-2-svgrepo-com-white.svg');
+      background-repeat: no-repeat;
+      background-size: 28px;
+      background-position: 98%;
+    }
+  }
+  .date-field-ui {
+    width: 100%;
+    @include flexcol();
+    gap: 8px;
+
+    label {
+      color: $white;
+      font-size: 15px;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    input[type='date'] {
+      cursor: pointer;
+      width: 100%;
+      background-color: $black;
+      border: 1px solid $white;
+      padding: 12px 24px;
+      border-radius: 100px;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 300ms ease;
+      outline: none;
+      background-image: url('/calendarwhite.svg');
+      background-repeat: no-repeat;
+      background-size: 22px;
+      background-position: 95% center;
+
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      &:focus {
+        border-color: $purple;
+      }
+    }
+  }
+  .board-type-field {
+    width: 100%;
+    @include flexcol();
+    gap: 8px;
+
+    .board-label {
+      color: $white;
+      font-size: 15px;
+    }
+
+    .board-options {
+      display: flex;
+      gap: 12px;
+
+      .board-option {
+        cursor: pointer;
+        padding: 8px 16px;
+        border: 1px solid $white;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: $white;
+        letter-spacing: -0.1px;
+        text-wrap: nowrap;
+        font-weight: 400;
+
+        input[type='radio'] {
+          display: none;
+        }
+
+        &.selected {
+          background-color: $purple;
+          border-color: $purple;
+        }
+
+        &:hover {
+          border-color: $purple;
+        }
+      }
+    }
+  }
+}
