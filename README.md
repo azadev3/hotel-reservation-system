@@ -7,14 +7,12 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 
 1. Clone the repository:
 
-
-    ```bash
-    ### git clone https://github.com/azadev3/hotel-reservation-system.git
-
-    ### cd hotel-reservation-system
-    ### npm install
-    ### npm run dev
-    ```
+   ```bash
+   git clone https://github.com/azadev3/hotel-reservation-system.git
+   cd hotel-reservation-system
+   npm install
+   npm run dev
+   ```
 
 ## Technology & Architecture
 
@@ -22,3 +20,12 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 - State Management: Context API
 - Styling: SCSS + Mobile responsive design
 - i18n for translations
+
+## Architecture Decisions
+
+- **Component-Based Architecture:** The app is divided into reusable components (FormSection, DaysTable, Summary) to improve maintainability and readability.
+- **State Management:** Context API is used to manage global state (config and daysData) because the state is not too complex, avoiding unnecessary Redux overhead.
+- **Data Mocking:** All data (countries, hotels, meals, board types) is stored in mock files for simplicity. This can later be replaced with API calls.
+- **Translation (i18n):** Implemented using react-i18next to support multiple languages and improve scalability.
+- **Responsive Design:** SCSS + media queries are used to make the app mobile-friendly and ensure good UX across devices.
+- **Pricing Logic:** Meal rules and total price calculation are centralized in helper functions for consistency and easy maintenance.
