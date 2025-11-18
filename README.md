@@ -36,8 +36,7 @@ Allows users to select destinations, hotels, meal plans, and calculates total co
 - **User Authentication:** No login or user session management implemented. Could add authentication for personalized bookings.
 - **Validation & Error Handling:** Basic validation implemented. Could add more robust form validation and better user feedback.
 - **Performance Optimization:** Currently suitable for small datasets. For large datasets, pagination and lazy loading can be optimized.
-- **Export/Print Functionality:** Not yet implemented. Future improvement: allow users to export booking summary as PDF.
-- **Unit Testing:** No automated tests yet. Could add Jest/React Testing Library tests for components and business logic.
+- **Export/Print Functionality:** PDF export is implemented, but styling issues remain—text and layout may not render perfectly. Future improvement: optimize styling for clean, accurate PDF output.
 
 ## Live Demo
 
